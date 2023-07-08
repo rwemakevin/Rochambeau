@@ -39,20 +39,27 @@ body {
     rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
+.counter p {
+  font-size: 15px;
+}
+
 section#play {
   padding: 20px 0;
   background: rgb(248, 248, 245);
 }
 
+section#play > h4 {
+  font-size: 25px;
+}
 section#play > h4,
 section#play > p {
   text-align: center;
 }
 
 section#play > p {
-  font-size: 10px;
+  font-size: 15px;
   font-style: italic;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 .play-content {
   width: 85%;
@@ -93,10 +100,11 @@ section#play > p {
   background-color: black;
   color: white;
   border-radius: 5px;
+  font-size: 20px;
 }
 
 img {
-  width: 100px;
+  width: 100%;
   height: auto;
   border-radius: 8px;
 }
@@ -125,7 +133,6 @@ img:hover {
 }
 
 .result p {
-  font-size: 12px;
   text-align: center;
 }
 
@@ -154,7 +161,7 @@ section#winner {
 }
 
 section#winner h1 {
-  font-size: 15px;
+  font-size: 25px;
   text-transform: uppercase;
 }
 
