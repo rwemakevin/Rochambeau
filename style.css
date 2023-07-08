@@ -1,0 +1,165 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Ysabeau Infant", sans-serif;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  background: black;
+  padding: 10px 0;
+}
+
+.game-title {
+  /* border: 1px solid rgba(223, 222, 222, 0.301); */
+  background-color: rgb(17, 17, 17);
+  padding: 10px 40px;
+  color: white;
+  border-radius: 5px;
+}
+
+.counter {
+  position: absolute;
+  right: 0;
+  margin-top: 5px;
+  padding: 5px 10px;
+  font-weight: bold;
+  font-size: 10px;
+  text-align: center;
+  border-radius: 5px;
+  background: rgb(240, 240, 237);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+section#play {
+  padding: 20px 0;
+  background: rgb(248, 248, 245);
+}
+
+section#play > h4,
+section#play > p {
+  text-align: center;
+}
+
+section#play > p {
+  font-size: 10px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.play-content {
+  width: 85%;
+  margin: 0 auto;
+  padding: 5px 0;
+  background: rgb(240, 240, 237);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#reset {
+  width: 85%;
+  margin: 0 auto;
+  padding: 20px 0;
+  background: rgb(240, 240, 237);
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: none;
+}
+
+#reset button {
+  padding: 5px 10px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.choice {
+  padding: 20px;
+}
+
+.choice p {
+  text-align: center;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+
+img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+}
+
+img:hover {
+  transform: scale(0.97);
+  transition: ease-in-out 0.2s all;
+}
+
+.result-content {
+  width: 85%;
+  margin: 0 auto;
+  padding: 5px 20px;
+  background: rgb(240, 240, 237);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.result {
+  padding: 0 20px;
+  border: 1px solid black;
+  align-items: center;
+}
+
+.result p {
+  font-size: 12px;
+  text-align: center;
+}
+
+.result.user {
+  background: rgb(55, 87, 55);
+  color: white;
+}
+
+.result.pc {
+  background: rgb(49, 166, 182);
+  color: white;
+}
+
+.result.round-winner {
+  color: black;
+  flex: 1;
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+section#winner {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+section#winner h1 {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+span#round-winner {
+  font-weight: bold;
+  color: black;
+  font-size: 14px;
+}
