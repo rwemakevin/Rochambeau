@@ -4,7 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock, Paper, Scissors</title>
-    <script src="./script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="title">
+      <div class="game-title">
+        <h1>ROCHAMBEAU</h1>
+      </div>
+    </div>
+    <div class="counter">
+      <p id="game-count">Total Play Left: 5</p>
+    </div>
+    <section id="play">
+      <h4 id="h4">Choose your Play</h4>
+      <p>Instructions: To play, Click on the Image</p>
+      <div class="play-content">
+        <div class="choice">
+          <img id="user-rock" src="./img/rock.jpg" alt="" />
+          <p>ROCK</p>
+        </div>
+        <div class="choice">
+          <img id="user-paper" src="./img/paper.jpg" alt="" />
+          <p>PAPER</p>
+        </div>
+        <div class="choice">
+          <img id="user-scissors" src="./img/scissors.jpg" alt="" />
+          <p>SCISSCORS</p>
+        </div>
+      </div>
+      <div id="reset">
+        <p>Game Over</p>
+        <button id="button-restart" onclick="reload()">Restart Game</button>
+      </div>
+      <div class="result-content">
+        <div class="result user">
+          <p>user Play<span id="user-play"></span></p>
+        </div>
+        <div class="result user">
+          <p>User Win: <span id="user-win">0</span></p>
+        </div>
+
+        <div class="result round-winner">
+          <p>Round Winner<span id="round-winner"></span></p>
+        </div>
+        <div class="result pc">
+          <p>Computer Win:<span id="computer-win">0</span></p>
+        </div>
+        <div class="result pc">
+          <p>Computer Play<span id="computer-play"></span></p>
+        </div>
+      </div>
+    </section>
+    <section id="winner">
+      <h1 id="final-winner"></h1>
+    </section>
+    <script src="./script.js"></script>
+  </body>
 </html>
